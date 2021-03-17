@@ -9,7 +9,7 @@ const ArticleListItem = ({ article }) => {
 			<p class="text-2xl p-2">{parse(article.title)}</p>
             <Imgix
         src={article.heroImage.url}
-        imgixParams={{ fit: "crop", crop: "focalpoint", ar: "1.8:1"}}
+        imgixParams={{ fit: "crop", crop: "focalpoint", ar: "1.8:1", auto: "format,compress"}}
         sizes="(min-width: 1024px) calc(33vw - 60px), (min-width: 768px) calc(50vw - 100px), calc(100vw - 70px)"
         loading="lazy"
         imgProps={{
